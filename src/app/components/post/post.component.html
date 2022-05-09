@@ -1,0 +1,7 @@
+<h3>Posts List:</h3>
+<div *ngFor="let post of posts">
+  Title:  {{post.title}} <br>
+<!--  <button><a routerLink="{{post.id}}">Post details {{post.id}}</a></button>-->
+  <button><a [routerLink]="[post.id]">Post details {{post.id}}</a></button>
+  <hr/>
+</div>
