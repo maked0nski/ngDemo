@@ -1,0 +1,10 @@
+<div>
+  <div *ngFor="let work of experience">
+    <h4 class="position-work">{{work.position}} <samp class="work-color"> {{work.organization}}</samp></h4>
+    <span class="date-work">{{work.periodFrom}} - {{work.periodTo}} <samp class="prof-divider">| </samp>{{work.place}}</span>
+
+    <ul class="work-li" *ngFor="let responsibiliti of work.listOfResponsibilities">
+      <li>{{responsibiliti}}</li>
+    </ul>
+  </div>
+</div>

@@ -1,1 +1,276 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+a {
+  background-color: transparent;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f6f9;
+  padding: 40px 20px 40px 20px;
+  font-family: Montserrat;
+}
+.wrapper {
+  background-color: #ffffff;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+.sidebar {
+  background-color: #4b4b4b;
+  width: 370px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.my-photo {
+  width: 300px;
+}
+
+.about-me-container {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.contacts-conteiner {
+  margin-left: 40px;
+  margin-right: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.contacts-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.contacts-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contacts-link-type {
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+/* @media (mix-width: 1024px){
+    .contacts-link {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .contacts-link-type {
+        font-size: 12px;
+        line-height: 18px;
+} */
+
+.tech-skills-conteiner {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 55px;
+}
+
+.tech-skills-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.tech-skills-item {
+  color: #ff6b08;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 15px;
+}
+.tech-skills-text {
+  color: #d8dadd;
+  text-decoration: none;
+}
+
+.soft-skills-conteiner {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 55px;
+}
+
+.soft-skills-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.soft-skills-item {
+  color: #ff6b08;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 15px;
+}
+.soft-skills-text {
+  color: #d8dadd;
+}
+
+.about-me-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.my-name{
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 89px;
+  color: #000000;
+}
+
+.about-me-text{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595959;
+  /* width: 413px; */
+  /* height: 107px; */
+}
+
+.project-conteiner-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-top: 64px;
+  color: #000000;
+}
+
+.project-link {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.project-link-text {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.project-link-point{
+  color: #737373;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 24px;
+}
+.li-project{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 15px;
+}
+.project-link-brackets{
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.work-experience{
+  padding-top: 52px;
+  padding-bottom: 18px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.position-work{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  /* padding-bottom: 14px; */
+  color: #000000;
+}
+.date-work{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a8a8a8;
+  margin-bottom: 14px;
+}
+.prof-divider{
+  color: #000000;
+}
+.work-color{
+  color: #ff6b08;
+
+}
+
+.work-li{
+  color: #595959;
+  margin-left: 20px;
+  /* max-width: 535px; */
+}
+
+.position-work1{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-top: 24px;
+  color: #000000;
+}
+.position-education{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ff6b08;
+}
+
+.management{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+.certificate{
+  width: 1000px;
+}
+.project__work-li{
+  list-style-type: none;
+}

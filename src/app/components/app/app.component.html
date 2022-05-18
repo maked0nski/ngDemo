@@ -1,1 +1,47 @@
-<div> Blank </div>
+<!-- main container -->
+<div class="wrapper">
+  <aside class="sidebar">
+    <img class="my-photo" src="./assets/img/my_photo.jpg" alt="My Foto">
+    <!-- contacts conteiner-->
+    <app-contacts></app-contacts>
+
+    <!-- Tech Skills conteiner -->
+    <app-skills [testData]="skills"></app-skills>
+    <!-- Tech Skills conteiner -->
+    <app-skills [testData]="language"></app-skills>
+    <!-- Tech Skills conteiner -->
+    <app-skills [testData]="qualities"></app-skills>
+    <!-- Tech Skills conteiner -->
+    <app-skills [testData]="hobby"></app-skills>
+
+  </aside>
+
+  <!-- container with information about me  -->
+  <div class="about-me-container">
+    <!-- about me main info -->
+    <div>
+      <h2 class="about-me-title">Резюме</h2>
+      <h1 class="my-name">{{person.name}} {{person.surname}}</h1>
+
+      <p class="about-me-text">
+        Переконався на власному досвіді, що при правильній мотивації, бажанні вдосконалюватись та згуртаваній команді, можна досягти будь-яких вершин.
+        Мета працевлаштування: знайти цікаву роботу, в дружньому колективі, з перспективою кар’єрного росту.
+      </p>
+    </div>
+
+    <!-- Project conteiner -->
+    <app-about></app-about>
+
+    <!-- Work Experience -->
+    <div>
+      <h3 class="work-experience">Стаж роботи</h3>
+
+      <app-experience></app-experience>
+
+      <!-- Education -->
+      <h3 class="work-experience">Освіта</h3>
+      <app-education></app-education>
+
+    </div>
+  </div>
+</div>

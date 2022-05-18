@@ -1,0 +1,5 @@
+<div *ngFor="let element of education">
+  <h4 class="position-education">{{element.educationalInstitution}}</h4>
+  <h5 class="management" *ngFor="let e of element.department">{{e}}</h5>
+  <span class="date-work">{{element.periodFrom}} - {{element.periodTo}} <samp class="prof-divider">| </samp>{{element.place}}</span>
+</div>

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ISkill} from "../../../interface/skill.interface";
+import {languages, skills, personalQualities, hobby, person} from "../../../data";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngDemo';
+  person = person;
+  skills: ISkill = skills;
+  language: ISkill = languages;
+  qualities: ISkill = personalQualities;
+  hobby: ISkill = hobby;
 }

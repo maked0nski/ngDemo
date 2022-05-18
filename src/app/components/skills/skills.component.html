@@ -1,0 +1,11 @@
+<div class="tech-skills-conteiner">
+  <h3 class="tech-skills-title">{{testData.title}}</h3>
+  <ul *ngIf="testData">
+    <li *ngFor="let skill of testData.list" class="tech-skills-item">
+      <a href="#" class="tech-skills-text">
+        {{skill.skill}}
+      </a>
+      <a *ngIf="skill.level">{{skill.level}}</a>
+    </li>
+  </ul>
+</div>
